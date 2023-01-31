@@ -18,7 +18,7 @@ Include your ER diagram here
 Write your own steps
 
 ## PROGRAM
-
+```
 from django.db import models
 from django.contrib import admin
 # Create your models here.
@@ -31,7 +31,7 @@ class students(models.Model):
     gender=models.CharField(max_length = 200)
 class studentAdmin(admin.ModelAdmin):
     list_display = ('Referencenumber','name','age','email','gender')
-
+```
 
 ## OUTPUT
 
