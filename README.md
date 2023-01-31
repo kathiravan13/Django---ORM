@@ -11,9 +11,13 @@ Include your ER diagram here
 
 ### STEP 1:
 
-### STEP 2:
+create the django domain
 
-### STEP 3:
+# STEP 2:
+then from the the django.db import the models and then from the django.contribute import the admin
+
+# STEP 3:
+then create your own model by defining the class and with the respective comments
 
 Write your own steps
 
@@ -40,3 +44,4 @@ class studentAdmin(admin.ModelAdmin):
 
 
 ## RESULT
+program is executed successfully
