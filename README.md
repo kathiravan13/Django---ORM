@@ -19,11 +19,24 @@ Write your own steps
 
 ## PROGRAM
 
-Include your code here
+from django.db import models
+from django.contrib import admin
+# Create your models here.
+
+class students(models.Model):
+    Referencenumber = models.CharField(max_length = 200, primary_key=True)
+    name= models.CharField(max_length = 200)
+    age = models.IntegerField()
+    email = models.TextField()
+    gender=models.CharField(max_length = 200)
+class studentAdmin(admin.ModelAdmin):
+    list_display = ('Referencenumber','name','age','email','gender')
+
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![Screenshot (144)](https://user-images.githubusercontent.com/119831303/215691554-f3fdeea6-72f2-42b1-bacc-05e43f0e2686.png)
+
 
 
 ## RESULT
